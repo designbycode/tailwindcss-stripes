@@ -1,4 +1,16 @@
 # Tailwind CSS Stripes Plugin
+![Static Badge](https://img.shields.io/badge/%40designbycode%2Ftailwindcss-stripes)
+![npm](https://img.shields.io/npm/dt/%40designbycode/tailwindcss-stripes)
+
+
+![NPM](https://img.shields.io/npm/l/tailwindcss-stripes)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/tailwindcss-stripes)
+[![GitHub stars](https://img.shields.io/github/stars/DesignByCode/tailwindcss-stripes?style=social)](https://github.com/DesignByCode/tailwindcss-stripes/stargazers)
+
+[![NPM](https://nodei.co/npm/@designbycode/tailwindcss-stripes.png)](https://nodei.co/npm/@designbycode/tailwindcss-stripes/)
+
+
+
 The Tailwind CSS Stripes Plugin provides a set of utility classes and components that allow you to easily create striped backgrounds for your HTML elements. It offers a flexible way to customize the color, size, opacity, and animation direction of the stripes.
 
 ## Installation
