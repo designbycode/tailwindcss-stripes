@@ -1,6 +1,6 @@
 {
   "name": "@designbycode/tailwindcss-stripes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tailwindcss utilities for add stripe background to section",
   "license": "MIT",
   "repository": {
