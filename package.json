@@ -39,6 +39,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "clean": "rd /s /q esm dist lib build .cache>nul 2>&1|echo.>nul",
+    "release": "node ./node_modules/tailwindcss/scripts/release-notes.js",
     "dev": "pnpm build --watch"
   },
   "lint-staged": {
