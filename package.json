@@ -11,25 +11,67 @@
     "url": "https://github.com/DesignByCode/tailwindcss-stripes/issues"
   },
   "homepage": "https://github.com/DesignByCode/tailwindcss-stripes#readme",
-  "author": "Claude Myburgh <claude@designbycode.co.za>",
   "keywords": [
+    "front-end",
+    "frontend",
+    "css",
     "tailwindcss",
     "plugin",
     "tailwindcss-plugin",
     "tailwindcss stripes",
     "designbycode"
   ],
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && vite build",
+    "clean": "rd /s /q esm dist lib build .cache>nul 2>&1|echo.>nul",
+    "dev": "pnpm build --watch"
   },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Claude Myburgh",
+      "email": "claude@designbycode.co.za",
+      "url": "https://designbycode.co.za"
+    }
+  ],
+  "browserslist": [
+    "> .5% or last 2 versions"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/DesignByCode/tailwindcss-stripes/blob/main/LICENCE"
+    }
+  ],
   "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "prettier": "^2.8.8",
+    "husky": "^8.0.3",
+    "tailwindcss": "^3.3.3",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3"
+    "terser": "^5.19.2",
+    "@types/node": "^20.4.8"
   }
 }
