@@ -17,6 +17,27 @@ direction of the stripes.
 
 ![Stripes Plugin](screen.png)
 
+## 📇 Table of Contents
+
+* [Installation](#installation)
+    * [Using pnpm](#using-pnpm)
+    * [Using npm](#using-npm)
+    * [Using yarn](#using-yarn)
+* [Configuration](#configuration)
+* [Usage](#usage)
+    * [Utility Classes](#utility-classes)
+        * [Stripes Utility](#stripes-utility)
+        * [Stripes Color Modifier](#stripes-color-modifier)
+        * [Stripes Direction Modifier](#stripes-direction-modifier)
+        * [Stripes Opacity Modifier](#stripes-opacity-modifier)
+        * [Stripes Size Modifier](#stripes-size-modifier)
+* [Customization](#customization)
+* [Conclusion](#conclusion)
+* [Contributing](#contributing)
+* [License](#license)
+* [Author](#author)
+* [Acknowledgments](#acknowledgments)
+
 ## Installation
 
 To use the Tailwind CSS Stripes Plugin, you need to have Tailwind CSS installed in your project. If you don't have it yet, you can follow the installation guide to set it up.
@@ -66,7 +87,6 @@ The plugin provides the following utility classes:
 #### Stripes Utility
 
 ```.stripes```
-
 The ```.stripes``` class creates a container with relative positioning, isolates its contents from being affected by the animation, and hides any overflowing content. It serves as the base class for creating the striped effect.
 
 ```html
@@ -93,7 +113,6 @@ The ```.stripes-{value}``` class sets the color of the stripes to selected value
 <div class="stripes stripes-[chocolate] stripes-[#ff000]">
     <!-- Your content here -->
 </div>
-
 ```
 
 #### Stripes Direction Modifier
@@ -107,7 +126,6 @@ The ```.stripes-reverse``` class reverses the direction of the stripes' animatio
 <div class="stripes stripes-reverse">
     <!-- Your content here -->
 </div>
-
 ```
 
 #### Stripes Opacity Modifier
@@ -126,7 +144,6 @@ The ```.stripes-opacity-{value}``` classes allow you to control the opacity of t
 <div class="stripes stripes-opacity-[0.12]">
     <!-- Your content here -->
 </div>
-
 ```
 
 #### Stripes Size Modifier
