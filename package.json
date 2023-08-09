@@ -31,7 +31,8 @@
   },
   "module": "./dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "utils"
   ],
   "publishConfig": {
     "access": "public"
