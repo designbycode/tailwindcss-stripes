@@ -133,7 +133,7 @@ module.exports = plugin.withOptions(
     return {
       theme: {
         stripeSizes: {
-          xm: "6px",
+          xs: "6px",
           sm: "12px",
           md: "20px",
           lg: "30px",
